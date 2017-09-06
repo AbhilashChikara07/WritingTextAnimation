@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unnamed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/transparent_color">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolBar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_marginRight="@dimen/margin_30"
+                android:layout_marginTop="@dimen/margin_80"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="@dimen/margin_30"
+                    android:src="@mipmap/fastfox_notification_color_icon" />
+
+                <com.example.okutech.fastfoxlogintextapp.FastFoxTextView
+                    android:id="@+id/userName"
+                    style="@style/user_name_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_25"
+                    app:font_type="@string/open_sens_bold" />
+
+                <com.example.okutech.fastfoxlogintextapp.FastFoxTextView
+                    android:id="@+id/welcomeText"
+                    style="@style/user_name_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textSize="@dimen/text_size_20"
+                    app:font_type="@string/open_sens_light" />
+
+                <ProgressBar
+                    android:id="@+id/separateProgressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:indeterminate="false"
+                    android:max="60"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_limit"
+                    android:visibility="gone" />
+
+                <com.example.okutech.fastfoxlogintextapp.FastFoxTextView
+                    android:id="@+id/getExactlyTV"
+                    style="@style/user_name_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textSize="@dimen/text_size_20"
+                    app:font_type="@string/open_sens_light" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.example.okutech.fastfoxlogintextapp.FastFoxButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent_color"
+            android:text="@string/lets_get_started"
+            android:textAllCaps="false"
+            android:textColor="@color/color_e74750"
+            android:textSize="@dimen/text_size_22"
+            app:font_type="@string/open_sens_bold" />
+    </LinearLayout>
+</FrameLayout>

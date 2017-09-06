@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">FastFoxLoginTextApp</string>
+    <string name="open_sens_bold">open_sens_bold</string>
+    <string name="open_sens_light">open_sens_light</string>
+    <string name="open_sens_regular">open_sens_regular</string>
+    <string name="open_sens_semi_bold">open_sens_semi_bold</string>
+
+    <string name="welcome_text">Welcome to Fastfox.com \nYour personalized
+        home search consultant.</string>
+    <string name="user_name">Abhilash Chikara</string>
+    <string name="lets_get_started">Let\'s Get Started</string>
+    <string name="get_exactly_text">Get exactly what you want ?\nHelp us understand
+        your requirement better. </string>
+
+</resources>
