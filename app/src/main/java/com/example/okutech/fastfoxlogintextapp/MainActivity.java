@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
     private FastFoxTextView mWelcomeText;
     private ProgressBar mSeparateProgressBar;
     private FastFoxTextView mGetExactlyTV;
-    private Handler mHandler ;
+    private Handler mHandler;
     private Runnable mRunnable;
     private int mProgressMin = 0;
-    private int mProgressMax = 60;
+    private int mProgressMax;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mUserName = (FastFoxTextView) findViewById(R.id.userName);
         mWelcomeText = (FastFoxTextView) findViewById(R.id.welcomeText);
         mSeparateProgressBar = (ProgressBar) findViewById(R.id.separateProgressBar);
+        mProgressMax = mSeparateProgressBar.getMax();
         mGetExactlyTV = (FastFoxTextView) findViewById(R.id.getExactlyTV);
         displayAnimatedUserName();
     }
@@ -60,9 +61,10 @@ public class MainActivity extends AppCompatActivity {
         mRunnable = new Runnable() {
             @Override
             public void run() {
-                mSeparateProgressBar.setProgress(mProgressMin++);
+                mProgressMin = mProgressMin + 2;
+                mSeparateProgressBar.setProgress(mProgressMin);
                 if (mProgressMin < mProgressMax) {
-                    mHandler.postDelayed(mRunnable, 0);
+                    mHandler.postDelayed(mRunnable, 1);
                 } else {
                     mHandler.removeCallbacks(mRunnable);
                     displayExactlyText();

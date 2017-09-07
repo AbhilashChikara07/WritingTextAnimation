@@ -14,9 +14,9 @@
     </style>
 
 
-    <style name="user_name_style">
-        <item name="android:textColor">@color/white_color</item>
-        <item name="android:textSize">@dimen/text_size_18</item>
+    <style name="welcome_text_style">
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
     </style>
 
 </resources>
