@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/black_color"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_color">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        style="@style/margin_20_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/app_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to"
+                android:textColor="@color/color_f0f0f0"
+                android:textSize="@dimen/text_size_16"
+                app:font_type="@string/open_sens_regular" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FastFox.com"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_22"
+                app:font_type="@string/open_sens_semi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

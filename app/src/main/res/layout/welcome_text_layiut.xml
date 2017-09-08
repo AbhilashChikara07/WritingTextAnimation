@@ -41,24 +41,24 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    style="@style/welcome_text_style"
+                    style="@style/margin_20_style"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="@dimen/margin_30"
-                    android:src="@mipmap/fastfox_notification_color_icon" />
+                    android:src="@mipmap/app_logo" />
 
-                <com.example.okutech.fastfoxlogintextapp.FastFoxTextView
+                <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
                     android:id="@+id/userName"
-                    style="@style/welcome_text_style"
+                    style="@style/margin_20_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white_color"
                     android:textSize="@dimen/text_size_25"
                     app:font_type="@string/open_sens_bold" />
 
-                <com.example.okutech.fastfoxlogintextapp.FastFoxTextView
+                <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
                     android:id="@+id/welcomeText"
-                    style="@style/welcome_text_style"
+                    style="@style/margin_20_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_20"
@@ -80,9 +80,9 @@
                     android:progressDrawable="@drawable/progress_limit"
                     android:visibility="gone" />
 
-                <com.example.okutech.fastfoxlogintextapp.FastFoxTextView
+                <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
                     android:id="@+id/getExactlyTV"
-                    style="@style/welcome_text_style"
+                    style="@style/margin_20_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin_30"
@@ -105,7 +105,7 @@
         <!--android:progressDrawable="@drawable/progress_limit"-->
         <!--android:visibility="visible" />-->
 
-        <com.example.okutech.fastfoxlogintextapp.FastFoxButton
+        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/transparent_color"

@@ -13,4 +13,8 @@
     <string name="get_exactly_text">Get exactly what you want ?\nHelp us understand
         your requirement better. </string>
 
+    <string name="enter_phone_no">Enter Phone No</string>
+    <string name="continue_btn_text">Continue</string>
+    <string name="text_91">+91</string>
+
 </resources>

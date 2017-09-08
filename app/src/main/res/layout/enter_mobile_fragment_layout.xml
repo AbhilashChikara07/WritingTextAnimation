@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_login_header" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginTop="-60dp"
+                android:background="@color/white_color"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_25"
+                    android:orientation="horizontal">
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:gravity="center"
+                        app:errorEnabled="true"
+                        app:font_type="@string/open_sens_regular"
+                        app:hintEnabled="false">
+
+                        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:paddingBottom="@dimen/padding_17"
+                            android:textSize="@dimen/text_size_16"
+                            android:text="@string/text_91"
+                            android:theme="@style/TextLabel"
+                            app:font_type="@string/open_sens_regular" />
+
+                    </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
+                        android:id="@+id/textInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:gravity="center"
+                        app:errorEnabled="true"
+                        app:font_type="@string/open_sens_regular"
+                        app:hintEnabled="false">
+
+                        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
+                            android:id="@+id/enterMobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:hint="@string/enter_phone_no"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="20dp"
+                            android:theme="@style/TextLabel"
+                            app:font_type="@string/open_sens_regular" />
+
+                    </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/common_button_layout" />
+
+</LinearLayout>

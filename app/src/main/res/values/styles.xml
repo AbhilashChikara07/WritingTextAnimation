@@ -14,9 +14,22 @@
     </style>
 
 
-    <style name="welcome_text_style">
-        <item name="android:layout_marginLeft">30dp</item>
-        <item name="android:layout_marginRight">30dp</item>
+    <style name="margin_20_style">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="margin_40_style">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/color_b7b8b9</item>
+        <item name="android:textSize">18sp</item>
+        <item name="colorAccent">@color/color_b7b8b9</item>
+        <item name="colorControlNormal">@color/color_b7b8b9</item>
+        <item name="colorControlActivated">@color/color_b7b8b9</item>
     </style>
 
 </resources>

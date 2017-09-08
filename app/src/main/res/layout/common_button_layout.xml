@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/margin_40_style"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="@dimen/margin_20"
+    android:elevation="0dp"
+    app:cardCornerRadius="5dp">
+
+    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton
+        android:id="@+id/actionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_e74750"
+        android:textSize="@dimen/text_size_20"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        app:font_type="@string/open_sens_semi_bold" />
+
+</android.support.v7.widget.CardView>

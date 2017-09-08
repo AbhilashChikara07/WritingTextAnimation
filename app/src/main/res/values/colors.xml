@@ -8,10 +8,11 @@
     <color name="black_color">#000000</color>
     <color name="color_2d2d2f">#2d2d2f</color>
     <color name="color_626366">#626366</color>
+    <color name="color_b7b8b9">#b7b8b9</color>
     <color name="transparent_color">#00000000</color>
     <color name="white_color">#ffffff</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
     <color name="color_e74750">#e74750</color>
     <color name="color_e21f2a">#e21f2a</color>
-    <color name="color_f0f0f0">#f0f0f0</color>
 
 </resources>

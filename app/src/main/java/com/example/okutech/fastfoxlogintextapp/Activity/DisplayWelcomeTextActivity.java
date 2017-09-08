@@ -1,4 +1,4 @@
-package com.example.okutech.fastfoxlogintextapp;
+package com.example.okutech.fastfoxlogintextapp.Activity;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,9 +7,11 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView;
+import com.example.okutech.fastfoxlogintextapp.R;
 
-    private ScrollView mScrollView;
+public class DisplayWelcomeTextActivity extends AppCompatActivity {
+
     private FastFoxTextView mUserName;
     private FastFoxTextView mWelcomeText;
     private ProgressBar mSeparateProgressBar;
@@ -22,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mScrollView = (ScrollView) findViewById(R.id.scrollView);
+        setContentView(R.layout.welcome_text_layiut);
         mUserName = (FastFoxTextView) findViewById(R.id.userName);
         mWelcomeText = (FastFoxTextView) findViewById(R.id.welcomeText);
         mSeparateProgressBar = (ProgressBar) findViewById(R.id.separateProgressBar);
