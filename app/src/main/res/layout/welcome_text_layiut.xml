@@ -106,6 +106,7 @@
         <!--android:visibility="visible" />-->
 
         <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton
+            android:id="@+id/getStartedBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/transparent_color"

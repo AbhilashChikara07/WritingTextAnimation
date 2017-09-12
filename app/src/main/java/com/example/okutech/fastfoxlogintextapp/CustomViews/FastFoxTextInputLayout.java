@@ -7,6 +7,7 @@ import android.support.design.widget.TextInputLayout;
 import android.util.AttributeSet;
 
 import com.example.okutech.fastfoxlogintextapp.R;
+import com.example.okutech.fastfoxlogintextapp.Utilities.UtilClass;
 
 /**
  * Description
@@ -19,10 +20,6 @@ import com.example.okutech.fastfoxlogintextapp.R;
 public class FastFoxTextInputLayout extends TextInputLayout {
 
     private String mFontType;
-    private final String OPEN_SENS_BOLD = "open_sens_bold";
-    private final String OPEN_SENS_LIGHT = "open_sens_light";
-    private final String OPEN_SENS_REGULAR = "open_sens_regular";
-    private final String OPEN_SENS_SEMI_BOLD = "open_sens_semi_bold";
 
     public FastFoxTextInputLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -35,31 +32,8 @@ public class FastFoxTextInputLayout extends TextInputLayout {
                 R.styleable.TextViewFontType,
                 0, 0);
         mFontType = typedArray.getString(R.styleable.TextViewFontType_font_type);
-        applyFontType(context);
-    }
+        setTypeface(UtilClass.getTypeFace(context, mFontType));
+        setHintTextAppearance(R.style.EditTextHint);
 
-    private void applyFontType(Context context) {
-        switch (mFontType) {
-            case OPEN_SENS_BOLD: {
-                Typeface face = Typeface.createFromAsset(context.getAssets(), "fonts/OpenSans-Bold.ttf");
-                setTypeface(face);
-                break;
-            }
-            case OPEN_SENS_LIGHT: {
-                Typeface face = Typeface.createFromAsset(context.getAssets(), "fonts/OpenSans-Light.ttf");
-                setTypeface(face);
-                break;
-            }
-            case OPEN_SENS_REGULAR: {
-                Typeface face = Typeface.createFromAsset(context.getAssets(), "fonts/OpenSans-Regular.ttf");
-                setTypeface(face);
-                break;
-            }
-            case OPEN_SENS_SEMI_BOLD: {
-                Typeface face = Typeface.createFromAsset(context.getAssets(), "fonts/OpenSans-Semibold.ttf");
-                setTypeface(face);
-                break;
-            }
-        }
     }
 }

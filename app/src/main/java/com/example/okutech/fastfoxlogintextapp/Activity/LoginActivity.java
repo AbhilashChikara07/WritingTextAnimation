@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
 
 import com.example.okutech.fastfoxlogintextapp.Fragments.EnterMobileNoFragment;
+import com.example.okutech.fastfoxlogintextapp.Fragments.EnterOtpFragment;
+import com.example.okutech.fastfoxlogintextapp.Fragments.EnterUserDetailFragment;
 import com.example.okutech.fastfoxlogintextapp.R;
 
 import butterknife.BindView;

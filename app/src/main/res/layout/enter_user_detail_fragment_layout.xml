@@ -26,65 +26,84 @@
                 android:layout_marginTop="-50dp"
                 android:background="@color/white_color"
                 android:elevation="0dp"
+                android:paddingBottom="@dimen/padding_10"
                 app:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_5"
-                    android:layout_marginLeft="@dimen/margin_20"
-                    android:layout_marginRight="@dimen/margin_20"
-                    android:layout_marginTop="@dimen/margin_20"
-                    android:paddingBottom="@dimen/padding_20"
-                    android:orientation="horizontal">
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_20">
 
                     <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
-                        android:layout_width="wrap_content"
+                        android:id="@+id/nameInputLayout"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_1"
-                        android:gravity="center"
                         app:font_type="@string/open_sens_regular">
 
                         <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/enterUserName"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_line"
                             android:clickable="false"
+                            android:cursorVisible="false"
                             android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/enter_name"
+                            android:imeOptions="actionDone"
                             android:paddingBottom="@dimen/padding_10"
                             android:paddingTop="@dimen/padding_10"
-                            android:paddingLeft="@dimen/padding_10"
-                            android:background="@drawable/edit_text_line"
-                            android:text="@string/text_91"
-                            android:textColor="@color/color_b7b8b9"
-                            android:textSize="@dimen/text_size_16"
+                            android:text="@string/user_name"
                             android:theme="@style/EditTextStyle"
                             app:font_type="@string/open_sens_regular" />
 
                     </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
 
                     <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
-                        android:id="@+id/textInputLayout"
+                        android:id="@+id/emailIdlInputLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/margin_20"
-                        android:paddingLeft="@dimen/padding_10"
-                        app:font_type="@string/open_sens_regular"
-                        app:errorEnabled="true">
+                        android:layout_marginTop="@dimen/margin_15"
+                        app:font_type="@string/open_sens_regular">
 
                         <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
-                            android:id="@+id/enterMobileNo"
+                            android:id="@+id/enterUserEmailId"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/enter_phone_no"
-                            android:imeOptions="actionDone"
                             android:background="@drawable/edit_text_line"
-                            android:inputType="number"
-                            android:maxLength="10"
-                            android:theme="@style/EditTextStyle"
+                            android:hint="@string/enter_email"
+                            android:imeOptions="actionDone"
+                            android:inputType="textEmailAddress"
                             android:paddingBottom="@dimen/padding_10"
                             android:paddingTop="@dimen/padding_10"
+                            android:theme="@style/EditTextStyle"
+                            app:font_type="@string/open_sens_regular" />
+
+                    </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
+                        android:id="@+id/moveDateInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15"
+                        app:font_type="@string/open_sens_regular">
+
+                        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
+                            android:id="@+id/moveDateETV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_line"
+                            android:hint="@string/move_in_date"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_15"
                             android:textSize="@dimen/text_size_16"
+                            android:theme="@style/EditTextStyle"
                             app:font_type="@string/open_sens_regular" />
 
                     </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>

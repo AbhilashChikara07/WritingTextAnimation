@@ -1,21 +1,33 @@
 package com.example.okutech.fastfoxlogintextapp.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
 
+import com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton;
 import com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView;
 import com.example.okutech.fastfoxlogintextapp.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class DisplayWelcomeTextActivity extends AppCompatActivity {
 
-    private FastFoxTextView mUserName;
-    private FastFoxTextView mWelcomeText;
-    private ProgressBar mSeparateProgressBar;
-    private FastFoxTextView mGetExactlyTV;
+    @BindView(R.id.userName)
+    FastFoxTextView mUserName;
+    @BindView(R.id.welcomeText)
+    FastFoxTextView mWelcomeText;
+    @BindView(R.id.separateProgressBar)
+    ProgressBar mSeparateProgressBar;
+    @BindView(R.id.getExactlyTV)
+    FastFoxTextView mGetExactlyTV;
+    @BindView(R.id.getStartedBtn)
+    FastFoxButton mGetStartedBtn;
+
     private Handler mHandler;
     private Runnable mRunnable;
     private int mProgressMin = 0;
@@ -25,11 +37,8 @@ public class DisplayWelcomeTextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_text_layiut);
-        mUserName = (FastFoxTextView) findViewById(R.id.userName);
-        mWelcomeText = (FastFoxTextView) findViewById(R.id.welcomeText);
-        mSeparateProgressBar = (ProgressBar) findViewById(R.id.separateProgressBar);
+        ButterKnife.bind(this);
         mProgressMax = mSeparateProgressBar.getMax();
-        mGetExactlyTV = (FastFoxTextView) findViewById(R.id.getExactlyTV);
         displayAnimatedUserName();
     }
 
@@ -82,5 +91,11 @@ public class DisplayWelcomeTextActivity extends AppCompatActivity {
                     public void finishAnimationCallBack() {
                     }
                 });
+    }
+
+    @OnClick(R.id.getStartedBtn)
+    public void openLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

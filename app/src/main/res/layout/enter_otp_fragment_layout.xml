@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f0f0f0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_login_header" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginTop="-60dp"
+                android:background="@color/white_color"
+                android:elevation="0dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_20"
+                    android:orientation="vertical">
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
+                        android:id="@+id/verificationCodeTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/verification_code_text"
+                        android:textColor="@color/color_626366"
+                        app:font_type="@string/open_sens_semi_bold" />
+
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
+                        android:id="@+id/enterOtpTIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_40"
+                        android:layout_marginRight="@dimen/margin_40"
+                        android:layout_marginTop="@dimen/margin_10"
+                        app:font_type="@string/open_sens_regular">
+
+                        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
+                            android:id="@+id/enterOtpETV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_40"
+                            android:layout_marginRight="@dimen/margin_40"
+                            android:background="@drawable/edit_text_line"
+                            android:gravity="center"
+                            android:hint="@string/enter_otp"
+                            android:inputType="number"
+                            android:imeOptions="actionDone"
+                            android:paddingBottom="@dimen/padding_10"
+                            android:paddingTop="@dimen/padding_10"
+                            android:theme="@style/EditTextStyle"
+                            app:font_type="@string/open_sens_regular" />
+
+                    </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
+
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
+                        android:id="@+id/showTimerTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_5"
+                        android:textColor="@color/color_b7b8b9"
+                        app:font_type="@string/open_sens_regular" />
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton
+                        android:id="@+id/resendBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:background="@drawable/button_unselect"
+                        android:text="@string/resend_btn_text"
+                        android:textColor="@color/color_626366"
+                        app:font_type="@string/open_sens_regular" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/common_button_layout" />
+
+</LinearLayout>

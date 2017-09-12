@@ -13,8 +13,15 @@
     <string name="get_exactly_text">Get exactly what you want ?\nHelp us understand
         your requirement better. </string>
 
-    <string name="enter_phone_no">Enter Phone No</string>
+    <string name="enter_phone_no">Enter Phone Number</string>
     <string name="continue_btn_text">Continue</string>
     <string name="text_91">+91</string>
+    <string name="verification_code_text">Verification code send to </string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="resend_btn_text">Resend</string>
+    <string name="verify_btn_text">Verify</string>
+    <string name="enter_name">Name*</string>
+    <string name="enter_email">Email ID*</string>
+    <string name="move_in_date">Move in Date</string>
 
 </resources>

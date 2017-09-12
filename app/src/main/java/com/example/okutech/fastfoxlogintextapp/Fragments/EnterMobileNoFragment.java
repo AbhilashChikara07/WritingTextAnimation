@@ -10,9 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.okutech.fastfoxlogintextapp.Activity.LoginActivity;
 import com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton;
 import com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView;
 import com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout;
@@ -93,6 +93,7 @@ public class EnterMobileNoFragment extends Fragment {
     @OnClick(R.id.actionBtn)
     public void onContinueBtnClick() {
         if (checkValidate()) {
+            ((LoginActivity) getActivity()).openFragment(new EnterOtpFragment());
         }
     }
 
