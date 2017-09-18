@@ -2,7 +2,7 @@ package com.example.okutech.fastfoxlogintextapp.CustomViews;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.AppCompatCheckedTextView;
 import android.util.AttributeSet;
 
 import com.example.okutech.fastfoxlogintextapp.R;
@@ -13,14 +13,14 @@ import com.example.okutech.fastfoxlogintextapp.Utilities.UtilClass;
  *
  * @author Abhilash Chikara
  * @version 1.0
- * @since 9/6/17
+ * @since 9/15/17
  */
 
-public class FastFoxButton extends android.support.v7.widget.AppCompatButton {
+public class FastFoxCheckedTextView extends AppCompatCheckedTextView {
 
-    private String mFontType;
+    private String mFontType = "open_sens_regular";
 
-    public FastFoxButton(Context context, AttributeSet attrs) {
+    public FastFoxCheckedTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initView(context, attrs);
     }
@@ -32,6 +32,5 @@ public class FastFoxButton extends android.support.v7.widget.AppCompatButton {
                 0, 0);
         mFontType = typedArray.getString(R.styleable.TextViewFontType_font_type);
         setTypeface(UtilClass.getTypeFace(context, mFontType));
-        this.setAllCaps(false);
     }
 }

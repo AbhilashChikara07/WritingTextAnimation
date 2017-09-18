@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
 
     <style name="AppTheme.FastFox" parent="AppTheme">
         <item name="android:windowSoftInputMode">stateHidden</item>
@@ -13,13 +13,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-    <style name="margin_20_style">
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginRight">20dp</item>
-    </style>
-
-    <style name="margin_40_style">
+    <style name="login_button_margin_40_style">
         <item name="android:layout_marginLeft">40dp</item>
         <item name="android:layout_marginRight">40dp</item>
     </style>
@@ -29,6 +23,8 @@
         <item name="colorAccent">@color/color_b7b8b9</item>
         <item name="colorControlNormal">@color/color_b7b8b9</item>
         <item name="colorControlActivated">@color/color_b7b8b9</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
     </style>
 
     <style name="EditTextHint" parent="TextAppearance.AppCompat">
@@ -36,5 +32,22 @@
         <item name="android:textColorHint">@color/color_b7b8b9</item>
         <item name="android:textSize">11.5sp</item>
     </style>
+
+
+    <style name="seekBar_style" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@color/color_e8e8e8</item>
+        <!--<item name="android:indeterminateDrawable">@color/color_f0f0f0</item>-->
+        <item name="android:minHeight">2dp</item>
+        <item name="android:maxHeight">2dp</item>
+    </style>
+
+    <style name="CheckTextViewStyle">
+        <item name="android:background">@drawable/bhk_bg_drawable</item>
+        <item name="android:textColor">@drawable/bhk_text_drawable</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
 
 </resources>

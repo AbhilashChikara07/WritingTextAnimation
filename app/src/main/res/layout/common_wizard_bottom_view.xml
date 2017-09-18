@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wizard_bottom_view_height"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_header_left_right_margin"
+        android:layout_marginRight="@dimen/common_header_left_right_margin">
+
+        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton
+            android:id="@+id/skipQuestionBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/skip_this_question"
+            android:textColor="@color/color_e8e8e8"
+            android:background="@color/transparent_color"
+            android:textSize="@dimen/text_size_13"
+            app:font_type="@string/open_sens_semi_bold" />
+
+        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton
+            android:id="@+id/nextBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent_color"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/color_e21f2a"
+            android:text="@string/next_btn_text"
+            android:textSize="@dimen/text_size_20"
+            app:font_type="@string/open_sens_regular" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -3,98 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_f0f0f0"
+    android:background="@color/color_e8e8e8"
     android:orientation="vertical">
 
-    <ScrollView
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1">-->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <include layout="@layout/common_login_header" />
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginLeft="@dimen/common_header_left_right_margin"
+            android:layout_marginRight="@dimen/common_header_left_right_margin"
+            android:layout_marginTop="@dimen/negative_margin"
+            app:cardCornerRadius="@dimen/common_corner_reduce">
 
-            <include layout="@layout/common_login_header" />
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_20"
-                android:layout_marginRight="@dimen/margin_20"
-                android:layout_marginTop="-50dp"
-                android:background="@color/white_color"
-                android:elevation="0dp"
-                app:cardCornerRadius="5dp">
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_internal_common_padding">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_5"
-                    android:layout_marginLeft="@dimen/margin_20"
-                    android:layout_marginRight="@dimen/margin_20"
-                    android:layout_marginTop="@dimen/margin_20"
-                    android:paddingBottom="@dimen/padding_20"
-                    android:orientation="horizontal">
+                    android:gravity="center"
+                    app:font_type="@string/open_sens_regular">
 
-                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_1"
-                        android:gravity="center"
-                        app:font_type="@string/open_sens_regular">
+                        android:background="@drawable/edit_text_line"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:paddingBottom="@dimen/padding_10"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingTop="@dimen/padding_10"
+                        android:text="@string/text_91"
+                        android:textColor="@color/color_b7b8b9"
+                        android:textSize="@dimen/text_size_16"
+                        android:theme="@style/EditTextStyle"
+                        app:font_type="@string/open_sens_regular" />
 
-                        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="false"
-                            android:focusable="false"
-                            android:paddingBottom="@dimen/padding_10"
-                            android:paddingTop="@dimen/padding_10"
-                            android:paddingLeft="@dimen/padding_10"
-                            android:background="@drawable/edit_text_line"
-                            android:text="@string/text_91"
-                            android:textColor="@color/color_b7b8b9"
-                            android:textSize="@dimen/text_size_16"
-                            android:theme="@style/EditTextStyle"
-                            app:font_type="@string/open_sens_regular" />
+                </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
 
-                    </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
+                <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:paddingLeft="@dimen/padding_10"
+                    app:errorEnabled="true"
+                    app:font_type="@string/open_sens_regular">
 
-                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout
-                        android:id="@+id/textInputLayout"
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
+                        android:id="@+id/enterMobileNo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/margin_20"
-                        android:paddingLeft="@dimen/padding_10"
-                        app:font_type="@string/open_sens_regular"
-                        app:errorEnabled="true">
+                        android:background="@drawable/edit_text_line"
+                        android:hint="@string/enter_phone_no"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:theme="@style/EditTextStyle"
+                        app:font_type="@string/open_sens_regular" />
 
-                        <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxEditTextView
-                            android:id="@+id/enterMobileNo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/enter_phone_no"
-                            android:imeOptions="actionDone"
-                            android:background="@drawable/edit_text_line"
-                            android:inputType="number"
-                            android:maxLength="10"
-                            android:theme="@style/EditTextStyle"
-                            android:paddingBottom="@dimen/padding_10"
-                            android:paddingTop="@dimen/padding_10"
-                            android:textSize="@dimen/text_size_16"
-                            app:font_type="@string/open_sens_regular" />
+                </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
 
-                    </com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextInputLayout>
+            </LinearLayout>
 
-                </LinearLayout>
+        </android.support.v7.widget.CardView>
 
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+    <!--</ScrollView>-->
 
     <include layout="@layout/common_button_layout" />
 

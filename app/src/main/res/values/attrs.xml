@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <declare-styleable name="TextViewFontType">
         <attr name="font_type" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="WizardProgressBar">
+        <attr name="stockColor" format="color" />
+        <attr name="circleColor" format="color" />
+        <attr name="stockWidth" format="dimension" />
+        <attr name="circleState" format="integer" />
+        <attr name="progressValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WizardLineView">
+        <attr name="lineProgress" format="integer" />
+        <attr name="progressColor" format="color" />
+        <attr name="trackColor" format="color" />
     </declare-styleable>
 
 </resources>

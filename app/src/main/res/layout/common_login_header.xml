@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="220dp"
+    android:layout_height="@dimen/common_header_height"
     android:background="@color/black_color"
     android:orientation="vertical">
 
@@ -20,15 +20,16 @@
 
 
     <LinearLayout
-        style="@style/margin_20_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/common_header_left_right_margin"
+        android:layout_marginRight="@dimen/common_header_left_right_margin"
+        android:layout_marginTop="@dimen/common_header_top_margin"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/logo_height_width"
+            android:layout_height="@dimen/logo_height_width"
             android:src="@mipmap/app_logo" />
 
         <LinearLayout
@@ -36,20 +37,20 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            android:paddingLeft="10dp">
+            android:paddingLeft="@dimen/margin_10">
 
             <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome to"
-                android:textColor="@color/color_f0f0f0"
+                android:text="@string/welcome_to"
+                android:textColor="@color/color_e8e8e8"
                 android:textSize="@dimen/text_size_16"
                 app:font_type="@string/open_sens_regular" />
 
             <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="FastFox.com"
+                android:text="@string/fastfox"
                 android:textColor="@color/white_color"
                 android:textSize="@dimen/text_size_22"
                 app:font_type="@string/open_sens_semi_bold" />

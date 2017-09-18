@@ -11,7 +11,7 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.FastFox">
-        <activity android:name=".Activity.DisplayWelcomeTextActivity">
+        <activity android:name=".Activity.WizardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activity.LoginActivity" />
+        <!--<activity android:name=".Activity.LoginActivity" />-->
 
     </application>
 

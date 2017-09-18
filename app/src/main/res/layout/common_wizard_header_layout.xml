@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_header_height"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent_color">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/backIB"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent_color"
+                        android:src="@mipmap/back_gray" />
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxTextView
+                        android:id="@+id/headerTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/home_req_text"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size_14"
+                        app:font_type="@string/open_sens_regular" />
+
+                    <com.example.okutech.fastfoxlogintextapp.CustomViews.FastFoxButton
+                        android:id="@+id/closeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent_color"
+                        android:gravity="center"
+                        android:text="@string/close_text"
+                        android:textColor="@color/color_626366"
+                        android:textSize="@dimen/text_size_14"
+                        app:font_type="@string/open_sens_regular" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_header_left_right_margin"
+            android:layout_marginRight="@dimen/common_header_left_right_margin"
+            android:layout_marginTop="@dimen/common_header_top_margin"
+            android:orientation="horizontal">
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardCircleProgress
+                android:id="@+id/firstWC"
+                android:layout_width="@dimen/wizard_circle_width_height"
+                android:layout_height="@dimen/wizard_circle_width_height"
+                android:padding="1dp"
+                app:circleState="0"
+                app:progressValue="0"
+                app:stockColor="@color/color_626366"
+                app:stockWidth="1dp" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardLineView
+                android:id="@+id/firstWL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/wizard_line_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:lineProgress="0"
+                app:progressColor="@color/white_color"
+                app:trackColor="@color/color_626366" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardCircleProgress
+                android:id="@+id/secondWC"
+                android:layout_width="@dimen/wizard_circle_width_height"
+                android:layout_height="@dimen/wizard_circle_width_height"
+                android:padding="1dp"
+                app:circleState="0"
+                app:progressValue="0"
+                app:stockColor="@color/color_626366"
+                app:stockWidth="1dp" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardLineView
+                android:id="@+id/secondWL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/wizard_line_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:lineProgress="0"
+                app:progressColor="@color/white_color"
+                app:trackColor="@color/color_626366" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardCircleProgress
+                android:id="@+id/thirdWC"
+                android:layout_width="@dimen/wizard_circle_width_height"
+                android:layout_height="@dimen/wizard_circle_width_height"
+                android:padding="1dp"
+                app:circleState="0"
+                app:progressValue="0"
+                app:stockColor="@color/color_626366"
+                app:stockWidth="1dp" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardLineView
+                android:id="@+id/thirdWL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/wizard_line_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:lineProgress="0"
+                app:progressColor="@color/white_color"
+                app:trackColor="@color/color_626366" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardCircleProgress
+                android:id="@+id/fourthWC"
+                android:layout_width="@dimen/wizard_circle_width_height"
+                android:layout_height="@dimen/wizard_circle_width_height"
+                android:padding="1dp"
+                app:circleState="0"
+                app:progressValue="0"
+                app:stockColor="@color/color_626366"
+                app:stockWidth="1dp" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardLineView
+                android:id="@+id/fourthWL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/wizard_line_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:lineProgress="0"
+                app:progressColor="@color/white_color"
+                app:trackColor="@color/color_626366" />
+
+            <com.example.okutech.fastfoxlogintextapp.CustomViews.WizardCircleProgress
+                android:id="@+id/fifthWC"
+                android:layout_width="@dimen/wizard_circle_width_height"
+                android:layout_height="@dimen/wizard_circle_width_height"
+                android:padding="1dp"
+                app:circleState="0"
+                app:progressValue="0"
+                app:stockColor="@color/color_626366"
+                app:stockWidth="1dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

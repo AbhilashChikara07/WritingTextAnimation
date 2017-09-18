@@ -6,6 +6,8 @@
     <string name="open_sens_regular">open_sens_regular</string>
     <string name="open_sens_semi_bold">open_sens_semi_bold</string>
 
+    <string name="welcome_to">Welcome to</string>
+    <string name="fastfox">FastFox.com</string>
     <string name="welcome_text">Welcome to Fastfox.com \nYour personalized
         home search consultant.</string>
     <string name="user_name">Abhilash Chikara,</string>
@@ -23,5 +25,22 @@
     <string name="enter_name">Name*</string>
     <string name="enter_email">Email ID*</string>
     <string name="move_in_date">Move in Date</string>
+    <string name="close_text">Close</string>
+    <string name="home_req_text">Home Requirement</string>
+    <string name="upto_price_text">Upto</string>
+    <string name="what_price_text">What are you looking to pay ?</string>
+    <string name="rupee_text">\u20B9</string>
+    <string name="min_price_text">12,000</string>
+    <string name="max_price_text">1,00,000</string>
+    <string name="skip_this_question">Skip this Question</string>
+    <string name="next_btn_text">Next</string>
+
+    <string name="one_rk">1 RK</string>
+    <string name="one_bhk">1 BHK</string>
+    <string name="two_bhk">2 BHK</string>
+    <string name="three_bhk">3 BHK</string>
+    <string name="four_bhk">4 BHK</string>
+    <string name="four_plus_bhk">4+ BHK</string>
+    <string name="how_many_bhk_text">How many bedrooms you want ?</string>
 
 </resources>
